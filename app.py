@@ -17,27 +17,12 @@ os.makedirs(snapshot_dir, exist_ok=True)
 
 frame_count = 0  # Initialize frame_count outside of any function
 
-model = YOLO("hatti.pt")
+model = YOLO("model.pt")
 frame_skip = 1
 pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
 cap = cv2.VideoCapture(1)
 
-def elephant_data_to_server(elephant_data, headers=None):
-    # Define the API endpoint
-    api_endpoint = "http://localhost:3000/api/accidents"
-    # Convert the data to JSON
-    json_payload = json.dumps(elephant_data)
-    # Send the POST request to the server with the JSON payload
-    headers = {'Content-Type': 'application/json'}
-    response = requests.post(api_endpoint, data=json_payload, headers=headers)
-    # Check the server's response
-    if response.status_code == 201:
-        print("Data sent successfully!")
-        return True
-    else:
-        print("Data upload failed.")
-        return False
 
 def annotate_frame(frame, custom_text):
     now = datetime.now()
@@ -111,7 +96,7 @@ def generate_frames(video_path, custom_text):
                     print(elephant_data)
                        
                     # #send http post request to the server
-                    elephant_data_to_server(elephant_data)
+                    (elephant_data)
                     if sound_played and time.time() - start_time > 10:
                         print("Stopping sound.")
                         elephant_sound.stop()
