@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 
 function App() {
-   // const socket = io("https://server-socket-k10p.onrender.com/");
+   const socket = io("https://bpc-hackfest-socket.onrender.com/");
 
    useEffect(() => {
       socket.on("connect", () => {
