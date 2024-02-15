@@ -102,7 +102,7 @@ In conclusion, Nigrani represents a groundbreaking approach to addressing human-
 
 ## Usage
 
-1. Access the Nigrani dashboard by opening `http://localhost:3000` in your web browser.
+1. Access the Nigrani dashboard by opening `http://localhost:5173/` in your web browser.
 2. Explore the different monitoring features and customize the settings according to your needs.
 
 ## Contributing
@@ -111,7 +111,9 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
-This project developed under **BPC Hackfest 2024**
+This project developed under **BPC Hackfest 2024**. 
+
+The project aims to provide a robust and efficient monitoring system. It leverages the latest technologies to ensure seamless surveillance and security.
 
 ## Contact
 
