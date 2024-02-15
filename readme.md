@@ -105,13 +105,37 @@ In conclusion, Nigrani represents a groundbreaking approach to addressing human-
 1. Access the Nigrani dashboard by opening `http://localhost:5173/` in your web browser.
 2. Explore the different monitoring features and customize the settings according to your needs.
 
+## Languages Used
+
+## Languages Used
+
+1. [![Reactjs]](https://www.reactjs.com/)
+   <br>
+   <img src="https://th.bing.com/th/id/OIP.33CwBYkmnMfpA9Djup22JwHaHa?rs=1&pid=ImgDetMain" style="height: 150px; object-fit: cover;">
+
+2. [![Python]](https://www.python.org/)
+   <br>
+   <img src="https://img.shields.io/badge/-Python-black?style=flat-square&logo=python" style="height: 150px; object-fit: cover;">
+
+3. [![MONGODB]](https://mongodb.org/)
+   <br>
+   <img src="https://secureservercdn.net/160.153.137.14/fad.0cb.myftpupload.com/wp-content/uploads/2021/03/MongoDB.jpg" style="height: 150px; object-fit: cover;">
+
+4. [![NODE JS]](https://www.nodejs.com/)
+   <br>
+   <img src="https://th.bing.com/th/id/R.d42672d4d185739d26257ed5c653c740?rik=rEXYValDvbZk4Q&pid=ImgRaw&r=0&sres=1&sresct=1" style="height: 150px; object-fit: cover;">
+
+5. [![YOLO v8]](https://www.nodejs.com/)
+   <br>
+   <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/104576/images/60c0daf-336a-171-86b-3a2b5d63df6a_1673353327682.png" style="height: 150px; object-fit: cover;">
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
-This project developed under **BPC Hackfest 2024**. 
+This project developed under **BPC Hackfest 2024**.
 
 The project aims to provide a robust and efficient monitoring system. It leverages the latest technologies to ensure seamless surveillance and security.
 
