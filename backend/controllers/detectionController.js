@@ -1,5 +1,6 @@
 import DetectionModel from '../models/detectionModel.js';
 import asyncHandler from 'express-async-handler';
+import { io } from 'socket.io-client';
 
 // @desc   Get all detections
 // @route  GET /api/detections
@@ -25,14 +26,19 @@ const createDetection = asyncHandler(async (req, res) => {
     additionalInfo,
   });
 
+  // save the data and populate the cameraId with the camera details
   const createdDetection = await detection.save();
+  const populatedDetection = await DetectionModel.findById(createdDetection._id).populate('cameraId');
 
-  // const socket = io(process.env.SOCKET_URL);
-  // socket.emit('send-message', createdDetection);
+  // const createdDetection = await detection.save();
+  // populate cameraId with the camera details
+
+  const socket = io(process.env.SOCKET_URL);
+  socket.emit('send-message', populatedDetection);
 
   res.status(201).json({
     message: 'Detection created successfully',
-    detection: createdDetection,
+    detection: populatedDetection,
   });
 });
 
