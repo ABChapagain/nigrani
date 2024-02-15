@@ -32,15 +32,15 @@ In conclusion, Nigrani represents a groundbreaking approach to addressing human-
 
 1.  **Raspberry Pi 4**
     <br>
-    <img src="https://th.bing.com/th/id/R.2a7ee301196df64807b43ab6332667ad?rik=LEjogk9z07bkCA&pid=ImgRaw&r=0" height="300">
+    <img src="https://th.bing.com/th/id/R.2a7ee301196df64807b43ab6332667ad?rik=LEjogk9z07bkCA&pid=ImgRaw&r=0" style="width: 300px; object-fit: cover;">
 
 2.  **Siren**
     <br>
-    <img src="https://static.wixstatic.com/media/360402_e68159ecae804f639da0c42f8043f180~mv2_d_1740_1305_s_2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" height="300">
+    <img src="https://static.wixstatic.com/media/360402_e68159ecae804f639da0c42f8043f180~mv2_d_1740_1305_s_2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" style="width: 300px; object-fit: cover;">
 
 3.  **LED Light**
     <br>
-    <img src="https://cdn.britannica.com/54/154654-050-BBC4DE90/diodes.jpg" height="300">
+    <img src="https://cdn.britannica.com/54/154654-050-BBC4DE90/diodes.jpg" style="width: 300px; object-fit: cover;">
 
 ## Installation
 
