@@ -30,11 +30,9 @@
 #             if filename.startswith("detected_") and filename.endswith(".jpg"):
 #                 snapshot_filename = os.path.join(snapshot_dir, filename)
 #                 # Process the snapshot
-#                 copy_snapshot(snapshot_filename)
-                
+#                 copy_snapshot(snapshot_filename)           
 #         # Add a delay to prevent continuous scanning
 #         time.sleep(1)
-
 # if __name__ == "__main__":
 #     listen_for_updates()
 
