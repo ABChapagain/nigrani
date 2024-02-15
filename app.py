@@ -21,7 +21,7 @@ model = YOLO("model.pt")
 frame_skip = 1
 pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 
 def annotate_frame(frame, custom_text):
