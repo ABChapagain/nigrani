@@ -4,7 +4,7 @@
 /frontend/src/components
 /frontend/src/pages
 /frontend/src/store
-/frontend/src/assets
+
 
 runs
 test.jsx
