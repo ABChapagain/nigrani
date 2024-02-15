@@ -33,6 +33,21 @@ const createCamera = asyncHandler(async (req, res) => {
   })
 })
 
+// @desc   Get a camera by ID
+// @route  GET /api/cameras/:id
+// @access Public
+
+const getCameraById = asyncHandler(async (req, res) => {
+  const camera = await CameraModel.findById(req.params.id)
+
+  if (camera) {
+    res.json(camera)
+  } else {
+    res.status(404)
+    throw new Error('Camera not found')
+  }
+})
+
 // @desc    Update a camera
 // @route   PUT /api/cameras/:id
 // @access  Private/Admin
@@ -76,4 +91,10 @@ const deleteCamera = asyncHandler(async (req, res) => {
   }
 })
 
-export { getActiveCameras, createCamera, updateCamera, deleteCamera }
+export {
+  getActiveCameras,
+  createCamera,
+  updateCamera,
+  deleteCamera,
+  getCameraById,
+}
