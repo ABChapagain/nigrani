@@ -93,6 +93,7 @@ In conclusion, Nigrani represents a groundbreaking approach to addressing human-
 
    ```bash
    python app.py
+   python send.py
    npm run socket
    npm run dev
    ```
