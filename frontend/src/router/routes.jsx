@@ -7,6 +7,7 @@ const AddCameraPage = lazy(() => import('../pages/cameras/AddCameraPage'));
 const EditCameraPage = lazy(() => import('../pages/cameras/EditCameraPage'));
 
 const DetectationListPage = lazy(() => import('../pages/detectations/DetectationListPage'));
+const EditDetectationPage = lazy(() => import('../pages/detectations/EditDetectationPage'));
 
 const routes = [
   // Dashboard
@@ -33,6 +34,11 @@ const routes = [
   {
     path: '/detectations/list',
     element: <DetectationListPage />,
+    layout: 'default',
+  },
+  {
+    path: '/detectations/edit/:id',
+    element: <EditDetectationPage />,
     layout: 'default',
   },
 ];
