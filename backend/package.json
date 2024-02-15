@@ -1,15 +1,21 @@
 {
   "name": "nigranibackend",
   "version": "1.0.0",
+  "type": "module",
   "description": "for the bpc hackfest 2024",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Mechi Mavericks",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
     "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^8.1.2"
   },
   "devDependencies": {
