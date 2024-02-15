@@ -1,0 +1,17 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-socket.js",
+  "type": "module",
+  "scripts": {
+    "socket": "node server-socket.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4"
+  }
+}
