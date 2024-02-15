@@ -41,12 +41,22 @@ import time
 import shutil
 import requests
 
+
+
+
+import requests
+import json
+
+# Example JSON data
+
+
 # Directory where snapshots are saved
 snapshot_dir = "detected"
 # Directory where you want to copy the images
 api_dir = "api"
 # ImgBB API key
 api_key = "b365a152756e43c9de89801a5280a9ac"
+backend_url = 'https://nigrani-backend.onrender.com/api/detectations'
 
 def copy_snapshot(snapshot_filename):
     os.makedirs(api_dir, exist_ok=True)
@@ -60,6 +70,13 @@ def copy_snapshot(snapshot_filename):
         }
         response = requests.post('https://api.imgbb.com/1/upload', params={'key': api_key}, files=files)
         print(response.json())
+        data = {
+                 "cameraId": "65cde6f95d2f55b139721e16",
+                  "additionalInfo": "A group of elephant detected in BPC hackfest 2024",
+                  "numberOfElephant": 4,
+                  "image" : "null"
+}
+        
 
 def listen_for_updates():
     while True:
