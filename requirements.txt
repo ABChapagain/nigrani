@@ -1,0 +1,7 @@
+opencv_contrib_python==4.8.1.78
+opencv_python==4.8.0.76
+opencv_python_headless==4.8.0.74
+pygame==2.5.2
+Requests==2.31.0
+torch==2.0.1
+ultralytics==8.1.9

@@ -29,7 +29,7 @@ while True:
         print("Error: Could not read frame.")
         break
 
-    results = model(frame, classes=20, conf=0.3)
+    results = model(frame, classes=20, conf=0.3, show_boxes=True)
 
     for r in results:
         for confidence, class_idx, *box in zip(r.boxes.conf, r.boxes.cls, r.boxes.xyxy):
