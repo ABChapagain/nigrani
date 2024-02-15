@@ -24,7 +24,7 @@ while True:
         print("Error: Could not read frame.")
         break
 
-    results = model.predict(frame, save=True)
+    results = model.predict(frame)
 
     for r in results:
         for confidence, class_idx, *box in zip(r.boxes.conf, r.boxes.cls, r.boxes.xyxy):
@@ -44,7 +44,7 @@ while True:
         sound_played = False
 
 
-    cv2.imshow('Elephant detection', frame)
+    # cv2.imshow('Object Detection', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break

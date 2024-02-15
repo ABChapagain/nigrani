@@ -1,5 +1,6 @@
 import cv2
 import threading
+
 from datetime import datetime
 from flask import Flask, render_template, Response
 from ultralytics import YOLO
@@ -18,10 +19,10 @@ os.makedirs(snapshot_dir, exist_ok=True)
 frame_count = 0  # Initialize frame_count outside of any function
 
 model = YOLO("model.pt")
+
 frame_skip = 1
 pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
-cap = cv2.VideoCapture(0)
 
 
 def annotate_frame(frame, custom_text):
@@ -122,7 +123,8 @@ def index():
 def video1():
     video_path = "test1.mp4"  
     custom_text = "Haldibari"
-    return Response(generate_frames(video_path, custom_text), mimetype='multipart/x-mixed-replace; boundary=frame')
+    return Response(generate_frames(video_path, custom_text), mimetype='multipart/x-mixed-replace; bo\\undary=frame')
+
 
 if __name__ == '__main__':
     app.run(port=49, debug=False)
