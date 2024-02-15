@@ -57,8 +57,8 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project developed under **BPC Hackfest 2024** 
 
 ## Contact
 
-For any questions or inquiries, please contact the project maintainer at [email@example.com](mailto:email@example.com).
+For any questions or inquiries, please contact the project maintainer at [mechigeeks@gmail.com](mailto:mechigeeks@gmail.com).
