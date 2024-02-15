@@ -37,7 +37,7 @@ while True:
             if class_name == "elephant":
                 print(f"Class: {class_name}, Confidence: {confidence}")
 
-            if class_name == "elephant" and confidence > 0.4 and not sound_played:
+            if class_name == "elephant" and confidence > 0.3 and not sound_played:
                 print("Elephant detected!")
                 elephant_sound.play()
                 sound_played = True
