@@ -1,0 +1,18 @@
+{
+  "name": "nigranibackend",
+  "version": "1.0.0",
+  "description": "for the bpc hackfest 2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mechi Mavericks",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
