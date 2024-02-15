@@ -31,20 +31,73 @@ In conclusion, Nigrani represents a groundbreaking approach to addressing human-
 ## Things We'll be using:
 
 1.  **Raspberry Pi 4**
-    ![Raspberry Pi 4](https://th.bing.com/th/id/R.2a7ee301196df64807b43ab6332667ad?rik=LEjogk9z07bkCA&pid=ImgRaw&r=0){:height="300px"}
+    <br>
+    <img src="https://th.bing.com/th/id/R.2a7ee301196df64807b43ab6332667ad?rik=LEjogk9z07bkCA&pid=ImgRaw&r=0" style="width: 300px; object-fit: cover;">
 
 2.  **Siren**
-    ![Siren](https://static.wixstatic.com/media/360402_e68159ecae804f639da0c42f8043f180~mv2_d_1740_1305_s_2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png){:height="300px"}
+    <br>
+    <img src="https://static.wixstatic.com/media/360402_e68159ecae804f639da0c42f8043f180~mv2_d_1740_1305_s_2.jpg/v1/fit/w_1000,h_1000,al_c,q_80/file.png" style="width: 300px; object-fit: cover;">
 
 3.  **LED Light**
-    ![LED Light](https://cdn.britannica.com/54/154654-050-BBC4DE90/diodes.jpg){:height="300px"}
+    <br>
+    <img src="https://cdn.britannica.com/54/154654-050-BBC4DE90/diodes.jpg" style="width: 300px; object-fit: cover;">
 
-## Installation
+## To install and configure Nigrani, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/abchapagain/nigrani.git`
-2. Install dependencies: `npm install`
-3. Configure the application by editing the `config.js` file.
-4. Start the application: `npm start`
+### Prerequisites
+
+- Node.js and npm (Node Package Manager) installed on your machine.
+- Python and pip (Python Package Manager) installed on your machine.
+- Git installed on your machine.
+- Access to the nigrani GitHub repository.
+
+### Installation Steps
+
+1. **Clone the GitHub Repository**: Open your terminal and navigate to the directory where you want to install nigrani. Then, clone the GitHub repository using the following command:
+
+   ```bash
+   git clone https://github.com/ABChapagain/nigrani
+   ```
+
+2. **Navigate to the Project Directory**: Change your current directory to the cloned nigrani repository:
+
+   ```bash
+   cd nigrani
+   ```
+
+3. **Install npm Packages**: Run the following command to install the required Node.js packages using npm:
+
+   ```bash
+   npm install
+   ```
+
+4. **Install pip Packages**: nigrani may require certain Python packages. To install these packages, create a virtual environment (recommended) and activate it. Then, use pip to install the required packages:
+
+   ```bash
+   # Create a virtual environment (optional but recommended)
+   python -m venv venv
+
+   # Activate the virtual environment (Windows)
+   venv\Scripts\activate
+
+   # Activate the virtual environment (macOS/Linux)
+   source venv/bin/activate
+
+   # Install Python packages
+   pip install -r requirements.txt
+   ```
+
+5. **Configuration**: nigrani may require configuration for your specific environment and CCTV camera setup. Refer to the project's documentation or configuration files to set up the system according to your needs.
+
+6. **Build and Start the Server**: Once you have installed the npm packages and configured the system, you can build and start the server using the following command and run this command in a different terminal:
+
+   ```bash
+   python app.py
+   npm run socket
+   npm run dev
+   ```
+
+   This command will build the project and start the server.
 
 ## Usage
 
