@@ -9,7 +9,7 @@ model = YOLO("model.pt")
 
 pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
     print("Error: Could not open webcam.")
