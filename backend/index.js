@@ -1,5 +1,4 @@
 import express from 'express'
-import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import bodyParser from 'body-parser'
@@ -9,6 +8,7 @@ import connectDB from './config/connectDB.js'
 
 // routes
 import cameraRoutes from './routes/cameraRoute.js'
+import detectionRoutes from './routes/detectionRoute.js'
 
 const app = express()
 
@@ -27,6 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // routes
 app.use('/api/cameras', cameraRoutes)
+app.use('/api/detections', detectionRoutes)
 
 app.get('/', (req, res) => {
   res.send('Hello World')
