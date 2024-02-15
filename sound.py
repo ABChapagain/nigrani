@@ -24,7 +24,7 @@ while True:
         print("Error: Could not read frame.")
         break
 
-    results = model.predict(frame, save=True)
+    results = model(frame)
 
     for r in results:
         for confidence, class_idx, *box in zip(r.boxes.conf, r.boxes.cls, r.boxes.xyxy):
