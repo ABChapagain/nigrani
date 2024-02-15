@@ -27,6 +27,10 @@ const createDetection = asyncHandler(async (req, res) => {
 
   const createdDetection = await detection.save()
 
+ const socket = io("https://server-socket-k10p.onrender.com/");
+ socket.emit("send-message", req.message);
+
+
   res.status(201).json({
     message: 'Detection created successfully',
     detection: createdDetection,
