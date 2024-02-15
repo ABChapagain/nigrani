@@ -11,6 +11,8 @@ import cameraUpdateSlice from './features/cameras/cameraUpdateSlice';
 import cameraDeleteSlice from './features/cameras/cameraDeleteSlice';
 import detectationListSlice from './features/detectations/detectationListSlice';
 import detectationDeleteSlice from './features/detectations/detectationDeleteSlice';
+import detectationDetailSlice from './features/detectations/detectationDetailSlice';
+import detectationUpdateSlice from './features/detectations/detectationUpdateSlice';
 
 const persistConfig = {
   key: 'Nigrani',
@@ -31,6 +33,8 @@ const rootReducer = combineReducers({
   // Detectations
   detectationList: detectationListSlice,
   detectationDelete: detectationDeleteSlice,
+  detectationDetail: detectationDetailSlice,
+  detectationUpdate: detectationUpdateSlice,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
