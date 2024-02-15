@@ -107,12 +107,31 @@ In conclusion, Nigrani represents a groundbreaking approach to addressing human-
 
 ## Languages Used
 
-[![Reactjs](https://th.bing.com/th/id/OIP.33CwBYkmnMfpA9Djup22JwHaHa?rs=1&pid=ImgDetMain)](https://www.reactjs.com/)
-[![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)](https://www.python.org/)
-[![MONGODB](https://secureservercdn.net/160.153.137.14/fad.0cb.myftpupload.com/wp-content/uploads/2021/03/MongoDB.jpg)](https://mongodb.org/)
-[![PYTHON](https://th.bing.com/th/id/OIP.ftcnnkZhnUhxDcoho4qcDAHaHY?rs=1&pid=ImgDetMain)](https://www.python.org/)
-[![NODE JS](https://th.bing.com/th/id/R.d42672d4d185739d26257ed5c653c740?rik=rEXYValDvbZk4Q&pid=ImgRaw&r=0&sres=1&sresct=1)](https://www.nodejs.com/)
-[![YOLO v8](https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/104576/images/60c0daf-336a-171-86b-3a2b5d63df6a_1673353327682.png)](https://www.nodejs.com/)
+## Languages Used
+
+1. [![Reactjs](https://th.bing.com/th/id/OIP.33CwBYkmnMfpA9Djup22JwHaHa?rs=1&pid=ImgDetMain)](https://www.reactjs.com/)
+   <br>
+   <img src="https://th.bing.com/th/id/OIP.33CwBYkmnMfpA9Djup22JwHaHa?rs=1&pid=ImgDetMain" style="height: 150px; object-fit: cover;">
+
+2. [![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python)](https://www.python.org/)
+   <br>
+   <img src="https://img.shields.io/badge/-Python-black?style=flat-square&logo=python" style="height: 150px; object-fit: cover;">
+
+3. [![MONGODB](https://secureservercdn.net/160.153.137.14/fad.0cb.myftpupload.com/wp-content/uploads/2021/03/MongoDB.jpg)](https://mongodb.org/)
+   <br>
+   <img src="https://secureservercdn.net/160.153.137.14/fad.0cb.myftpupload.com/wp-content/uploads/2021/03/MongoDB.jpg" style="height: 150px; object-fit: cover;">
+
+4. [![PYTHON](https://th.bing.com/th/id/OIP.ftcnnkZhnUhxDcoho4qcDAHaHY?rs=1&pid=ImgDetMain)](https://www.python.org/)
+   <br>
+   <img src="https://th.bing.com/th/id/OIP.ftcnnkZhnUhxDcoho4qcDAHaHY?rs=1&pid=ImgDetMain" style="height: 150px; object-fit: cover;">
+
+5. [![NODE JS](https://th.bing.com/th/id/R.d42672d4d185739d26257ed5c653c740?rik=rEXYValDvbZk4Q&pid=ImgRaw&r=0&sres=1&sresct=1)](https://www.nodejs.com/)
+   <br>
+   <img src="https://th.bing.com/th/id/R.d42672d4d185739d26257ed5c653c740?rik=rEXYValDvbZk4Q&pid=ImgRaw&r=0&sres=1&sresct=1" style="height: 150px; object-fit: cover;">
+
+6. [![YOLO v8](https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/104576/images/60c0daf-336a-171-86b-3a2b5d63df6a_1673353327682.png)](https://www.nodejs.com/)
+   <br>
+   <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/104576/images/60c0daf-336a-171-86b-3a2b5d63df6a_1673353327682.png" style="height: 150px; object-fit: cover;">
 
 ## Contributing
 
