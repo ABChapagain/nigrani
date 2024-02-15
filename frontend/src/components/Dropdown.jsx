@@ -64,7 +64,7 @@ const Dropdown = (props, forwardedRef) => {
         {props.button}
       </button>
 
-      <div
+      {/* <div
         ref={popperRef}
         style={styles.popper}
         {...attributes.popper}
@@ -72,7 +72,7 @@ const Dropdown = (props, forwardedRef) => {
         onClick={() => setVisibility(!visibility)}
       >
         {visibility && props.children}
-      </div>
+      </div> */}
     </>
   )
 }
