@@ -69,6 +69,7 @@ function AnalyticsHome() {
 
         <img src="https://i.ibb.co/sRHjnDj/image.png" alt="map" />
       </div>
+      
     </div>
   );
 }
