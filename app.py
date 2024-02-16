@@ -85,7 +85,7 @@ while True:
         break
 
     results = model(frame, classes=20, conf=0.6)
-
+# checking the results to play the sound and make the box
     for r in results:
         for confidence, class_idx, *box in zip(r.boxes.conf, r.boxes.cls, r.boxes.xyxy):
             print("box", box)
@@ -117,12 +117,12 @@ while True:
                 number_of_elephants = len(r)
                 print("Number of elephants detected:", number_of_elephants)
                 upload_image_to_imgbb(image_filename, number_of_elephants)
-
+# checking if the sound is played
     if sound_played and time.time() - start_time > 10:
         print("Stopping sound.")
         elephant_sound.stop()
         sound_played = False
-
+# showing the video interface for the app
     cv2.imshow('Elephant detection', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
