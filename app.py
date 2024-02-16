@@ -50,15 +50,19 @@ def upload_image_to_imgbb(image_path, number_of_elephants):
         else:
             print("Error:", response.status_code)
 
-# Initialize YOLO model
+#  YOLO model for the detection
 model = YOLO("models.pt")
 
-# Initialize Pygame for sound
+# Initialize Pygame for sound to be played
 pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
 
-# Open the video capture device
+# Open the video capture device for the device
+
+# 0 = source of the camera
 cap = cv2.VideoCapture(0)
+
+# 1 = source of the webcam
 # cap = cv2.VideoCapture(1)
 # cap = cv2.VideoCapture("elephant.mp4")
 
