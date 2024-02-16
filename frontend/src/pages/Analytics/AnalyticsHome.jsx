@@ -85,7 +85,7 @@ function AnalyticsHome() {
         </h2>
         <div className="flex flex-col">
           {/* image */}
-          {/* <div className="flex items-center justify-between p-4 bg-white rounded mt-4">
+          <div className="flex items-center justify-between p-4 bg-white rounded mt-4">
             <div className="flex items-center">
               <img src="https://i.ibb.co/bWTZqmm/elephant-detected-1708097523.jpg" alt="elephant-attack" className="h-16 w-16 rounded" />
               <div className="flex flex-col gap-2">
@@ -100,7 +100,7 @@ function AnalyticsHome() {
               </div>
             </div>
             <button className="bg-red-500 text-white px-4 py-2 rounded">View</button>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
