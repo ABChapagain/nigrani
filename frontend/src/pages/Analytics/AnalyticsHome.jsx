@@ -55,7 +55,7 @@ function AnalyticsHome() {
       </div>
 
       {/* map */}
-      <AnalyticMap />
+      {/* <AnalyticMap /> */}
       <AnalyticRecent />
     </div>
   );
