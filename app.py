@@ -49,14 +49,14 @@ def upload_image_to_imgbb(image_path, number_of_elephants):
             print("Error:", response.status_code)
 
 # Initialize YOLO model
-model = YOLO("model.pt")
+model = YOLO("models.pt")
 
 # Initialize Pygame for sound
 pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
 
 # Open the video capture device
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 if not cap.isOpened():
     print("Error: Could not open webcam.")
@@ -76,7 +76,7 @@ while True:
         print("Error: Could not read frame.")
         break
 
-    results = model(frame, classes=20, conf=0.8)
+    results = model(frame, classes=20, conf=0.6)
 
     for r in results:
         for confidence, class_idx, *box in zip(r.boxes.conf, r.boxes.cls, r.boxes.xyxy):
@@ -88,7 +88,7 @@ while True:
                 
                 
 
-            if class_name == "elephant" and confidence > 0.8 and not sound_played:
+            if class_name == "elephant" and confidence > 0.6 and not sound_played:
                 
                 # Extract box coordinates
                 x1, y1, x2, y2 = map(int, box[0])
