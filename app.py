@@ -8,7 +8,7 @@ import requests
 import json
 
 def send_data_to_server(detection_data, headers=None):
-    # Define the API endpoint
+    # Define the API endpoint to send the data in server
     api_endpoint = "https://nigrani-backend.onrender.com/api/detectations"
 
     # Convert the data to JSON

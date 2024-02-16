@@ -3,3 +3,4 @@
 runs
 test.jsx
 detected/
+.mypy_cache
