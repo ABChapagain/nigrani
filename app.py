@@ -40,7 +40,7 @@ def upload_image_to_imgbb(image_path, number_of_elephants):
             data = response.json()
             imageurl = data.get("data", {}).get("url")
             send_data_to_server({
-                "cameraId": "65cde6f95d2f55b139721e16",
+                "cameraId": "65cde6165d2f55b139721e0e",
                 "image": imageurl,
                 "numberOfElephant": number_of_elephants
             })
