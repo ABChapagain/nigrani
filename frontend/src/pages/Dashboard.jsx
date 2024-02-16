@@ -1,9 +1,9 @@
 const Dashboard = () => {
   return (
     <div>
-      <h1>Dashboard</h1>
+      <h1>DashBoard</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;
