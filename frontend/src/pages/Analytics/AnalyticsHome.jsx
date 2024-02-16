@@ -4,9 +4,7 @@ function AnalyticsHome() {
   return (
     <div className="flex flex-col p-5">
       <>
-        {/* Component Start */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 w-full max-w-6xl">
-          {/* Tile 1 */}
           <div className="flex items-center p-4 bg-white rounded">
             <div className="flex flex-shrink-0 items-center justify-center bg-green-200 h-16 w-16 rounded">
               <svg className="w-6 h-6 fill-current text-green-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -25,7 +23,6 @@ function AnalyticsHome() {
               </div>
             </div>
           </div>
-          {/* Tile 2 */}
           <div className="flex items-center p-4 bg-white rounded">
             <div className="flex flex-shrink-0 items-center justify-center bg-red-200 h-16 w-16 rounded">
               <svg className="w-6 h-6 fill-current text-red-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -44,7 +41,6 @@ function AnalyticsHome() {
               </div>
             </div>
           </div>
-          {/* Tile 3 */}
           <div className="flex items-center p-4 bg-white rounded">
             <div className="flex flex-shrink-0 items-center justify-center bg-green-200 h-16 w-16 rounded">
               <svg className="w-6 h-6 fill-current text-green-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -64,7 +60,6 @@ function AnalyticsHome() {
             </div>
           </div>
         </div>
-        {/* Component End  */}
       </>
     </div>
   );
