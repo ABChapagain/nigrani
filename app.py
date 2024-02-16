@@ -29,7 +29,8 @@ def send_data_to_server(detection_data, headers=None):
 
 def upload_image_to_imgbb(image_path, number_of_elephants):
     imgbb_url = "https://api.imgbb.com/1/upload"
-    imgbb_api = "f1f15419345a27917e10724914c88b6c"
+    # imgbb_api = "f1f15419345a27917e10724914c88b6c"
+    imgbb_api = "acc8674b08d65821a1cfdc995c344204"
 
     with open(image_path, 'rb') as file:
         files = {
@@ -56,9 +57,9 @@ pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
 
 # Open the video capture device
-# cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 # cap = cv2.VideoCapture(1)
-cap = cv2.VideoCapture("elephant.mp4")
+# cap = cv2.VideoCapture("elephant.mp4")
 
 if not cap.isOpened():
     print("Error: Could not open webcam.")
