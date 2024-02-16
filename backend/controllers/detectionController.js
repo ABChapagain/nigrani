@@ -28,7 +28,9 @@ const createDetection = asyncHandler(async (req, res) => {
 
   // save the data and populate the cameraId with the camera details
   const createdDetection = await detection.save();
-  const populatedDetection = await DetectionModel.findById(createdDetection._id).populate('cameraId');
+  const populatedDetection = await DetectionModel.findById(createdDetection._id).populate('cameraId').sort({
+    createdAt: -1,
+  });
 
   // const createdDetection = await detection.save();
   // populate cameraId with the camera details

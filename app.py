@@ -7,14 +7,12 @@ import os
 import requests
 import json
 
-
-def send_data_to_server(detectation_Data, headers=None):
-
+def send_data_to_server(detection_data, headers=None):
     # Define the API endpoint
     api_endpoint = "https://nigrani-backend.onrender.com/api/detectations"
 
-    #Convert the data to JSON
-    json_payload = json.dumps(detectation_Data)
+    # Convert the data to JSON
+    json_payload = json.dumps(detection_data)
 
     # Send the POST request to the server with the JSON payload
     headers = {'Content-Type': 'application/json'}
@@ -28,10 +26,8 @@ def send_data_to_server(detectation_Data, headers=None):
     else:
         print("Data upload failed.")
         return False
-    
 
-
-def upload_image_to_imgbb(image_path):
+def upload_image_to_imgbb(image_path, number_of_elephants):
     imgbb_url = "https://api.imgbb.com/1/upload"
     imgbb_api = "f1f15419345a27917e10724914c88b6c"
 
@@ -43,24 +39,23 @@ def upload_image_to_imgbb(image_path):
         if(response.status_code == 200):
             data = response.json()
             imageurl = data.get("data", {}).get("url")
-            # print("Image uploaded to ImgBB successfully:", imageurl)
             send_data_to_server({
                 "cameraId": "65cde6f95d2f55b139721e16",
                 "image": imageurl,
-                "additionalInfo": "A group of elephant detected in BPC hackfest 2024",
-                "numberOfElephant": 8
+                "numberOfElephant": number_of_elephants
             })
 
         else:
             print("Error:", response.status_code)
 
-
-# upload_image_to_imgbb("api/elephant_detected_1708027921.jpg")
-
+# Initialize YOLO model
 model = YOLO("model.pt")
 
+# Initialize Pygame for sound
 pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
+
+# Open the video capture device
 cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
@@ -81,17 +76,28 @@ while True:
         print("Error: Could not read frame.")
         break
 
-    results = model(frame, classes=20, conf=0.3)
+    results = model(frame, classes=20, conf=0.8)
 
     for r in results:
         for confidence, class_idx, *box in zip(r.boxes.conf, r.boxes.cls, r.boxes.xyxy):
+            print("box", box)
+            
             class_name = model.names[int(class_idx)]
-            if class_name == "elephant":
-                print(f"Class: {class_name}, Confidence: {confidence}")
+            # if class_name == "elephant" and confidence > 0.5:
+            #     print(f"Class: {class_name}, Confidence: {confidence}")
+                
                 
 
-            if class_name == "elephant" and confidence > 0.3 and not sound_played:
-                print("Elephant detected!")
+            if class_name == "elephant" and confidence > 0.8 and not sound_played:
+                
+                # Extract box coordinates
+                x1, y1, x2, y2 = map(int, box[0])
+                
+                # Draw bounding box
+                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                
+                # Add text label
+                cv2.putText(frame, f"{class_name} {confidence:.2f}", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
                 elephant_sound.play()
                 sound_played = True
@@ -100,9 +106,9 @@ while True:
                 # Save the image to the 'detected' folder
                 image_filename = os.path.join(detected_folder, f"elephant_detected_{int(time.time())}.jpg")
                 cv2.imwrite(image_filename, frame)
-                # send_image_to_api(image_filename)
-                # print(f"Detected image:  {image_filename}")
-                upload_image_to_imgbb(image_filename)
+                number_of_elephants = len(r)
+                print("Number of elephants detected:", number_of_elephants)
+                upload_image_to_imgbb(image_filename, number_of_elephants)
 
     if sound_played and time.time() - start_time > 10:
         print("Stopping sound.")

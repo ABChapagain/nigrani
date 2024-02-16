@@ -117,7 +117,14 @@ const EditDetectationPage = () => {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                         <div className={submitCount ? (errors.additionalInfo ? 'has-error' : 'has-success') : ''}>
                           <label htmlFor="additionalInfo">Additional Info</label>
-                          <Field as="textarea" type="textarea" className="form-textarea h-24 resize-none" name="additionalInfo" id="additionalInfo" placeholder="Eg: Kachankawal East" />
+                          <Field
+                            as="textarea"
+                            type="textarea"
+                            className="form-textarea h-24 resize-none"
+                            name="additionalInfo"
+                            id="additionalInfo"
+                            placeholder="Eg: Additional Information for detectation"
+                          />
                           {submitCount ? errors.additionalInfo ? <div className="text-danger mt-1">{errors.additionalInfo}</div> : '' : ''}
                         </div>
                       </div>
