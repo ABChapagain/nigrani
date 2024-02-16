@@ -1522,7 +1522,7 @@ const Header = () => {
                 </svg>
               </div>
             </button>
-            <ul className="sub-menu">
+            {/* <ul className="sub-menu">
               <li>
                 <NavLink to="/dragndrop">{t('drag_and_drop')}</NavLink>
               </li>
@@ -1540,7 +1540,7 @@ const Header = () => {
                   {t('documentation')}
                 </NavLink>
               </li>
-            </ul>
+            </ul> */}
           </li>
         </ul>
       </div>
