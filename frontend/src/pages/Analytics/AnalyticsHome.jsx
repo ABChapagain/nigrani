@@ -53,7 +53,7 @@ function AnalyticsHome() {
       </div>
 
       {/* map */}
-      <div className="w-full h-96 bg-white rounded mt-6 flex-col flex">
+      <div className="w-full bg-white rounded mt-6 flex-col flex">
         <h2
           className="
             text-2xl
@@ -69,7 +69,68 @@ function AnalyticsHome() {
 
         <img src="https://i.ibb.co/sRHjnDj/image.png" alt="map" />
       </div>
-      
+
+      {/* Recent Attack */}
+      <div className="w-full mt-6">
+        <h2
+          className="
+                text-2xl
+                font-bold
+                text-gray-700
+                p-4
+                border-b
+                border-gray-200
+            "
+        >
+          Recent Attack
+        </h2>
+        <div className="flex flex-col">
+          <div className="overflow-x-auto w-full">
+            <table className="w-full">
+              <thead>
+                <tr>
+                  <th className="text-left">Date</th>
+                  <th className="text-left">Location</th>
+                  <th className="text-left">Damage</th>
+                  <th className="text-left">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12/12/2021</td>
+                  <td>Chitwan</td>
+                  <td>2 Houses</td>
+                  <td>Resolved</td>
+                </tr>
+                <tr>
+                  <td>12/12/2021</td>
+                  <td>Chitwan</td>
+                  <td>2 Houses</td>
+                  <td>Resolved</td>
+                </tr>
+                <tr>
+                  <td>12/12/2021</td>
+                  <td>Chitwan</td>
+                  <td>2 Houses</td>
+                  <td>Resolved</td>
+                </tr>
+                <tr>
+                  <td>12/12/2021</td>
+                  <td>Chitwan</td>
+                  <td>2 Houses</td>
+                  <td>Resolved</td>
+                </tr>
+                <tr>
+                  <td>12/12/2021</td>
+                  <td>Chitwan</td>
+                  <td>2 Houses</td>
+                  <td>Resolved</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
