@@ -26,7 +26,8 @@ def send_data_to_server(detection_data, headers=None):
     else:
         print("Data upload failed.")
         return False
-
+    
+# to upload the image to the imgbb
 def upload_image_to_imgbb(image_path, number_of_elephants):
     imgbb_url = "https://api.imgbb.com/1/upload"
     # imgbb_api = "f1f15419345a27917e10724914c88b6c"
