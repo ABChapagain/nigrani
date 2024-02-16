@@ -150,7 +150,6 @@ const CameraListPage = () => {
           </div>
         )}
       </div>
-      {/* Camera Setup */}
     </div>
   );
 };
