@@ -70,7 +70,6 @@ function AnalyticsHome() {
         <img src="https://i.ibb.co/sRHjnDj/image.png" alt="map" />
       </div>
 
-      {/* Recent Attack */}
       <div className="w-full mt-6">
         <h2
           className="
@@ -85,49 +84,16 @@ function AnalyticsHome() {
           Recent Attack
         </h2>
         <div className="flex flex-col">
-          <div className="overflow-x-auto w-full">
-            <table className="w-full">
-              <thead>
-                <tr>
-                  <th className="text-left">Date</th>
-                  <th className="text-left">Location</th>
-                  <th className="text-left">Damage</th>
-                  <th className="text-left">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>12/12/2021</td>
-                  <td>Chitwan</td>
-                  <td>2 Houses</td>
-                  <td>Resolved</td>
-                </tr>
-                <tr>
-                  <td>12/12/2021</td>
-                  <td>Chitwan</td>
-                  <td>2 Houses</td>
-                  <td>Resolved</td>
-                </tr>
-                <tr>
-                  <td>12/12/2021</td>
-                  <td>Chitwan</td>
-                  <td>2 Houses</td>
-                  <td>Resolved</td>
-                </tr>
-                <tr>
-                  <td>12/12/2021</td>
-                  <td>Chitwan</td>
-                  <td>2 Houses</td>
-                  <td>Resolved</td>
-                </tr>
-                <tr>
-                  <td>12/12/2021</td>
-                  <td>Chitwan</td>
-                  <td>2 Houses</td>
-                  <td>Resolved</td>
-                </tr>
-              </tbody>
-            </table>
+          {/* image */}
+          <div className="flex items-center justify-between p-4 bg-white rounded mt-4">
+            <div className="flex items-center">
+              <img src="https://i.ibb.co/bWTZqmm/elephant-detected-1708097523.jpg" alt="elephant-attack" className="h-16 w-16 rounded" />
+              <div className="ml-4">
+                <span className="text-lg font-bold">Elephant Attack in Village</span>
+                <span className="text-gray-500">2 days ago</span>
+              </div>
+            </div>
+            <button className="bg-red-500 text-white px-4 py-2 rounded">View</button>
           </div>
         </div>
       </div>
