@@ -1,4 +1,5 @@
 import { lazy } from 'react';
+import AnalyticsHome from '../pages/Analytics/AnalyticsHome';
 // Dashboard
 const Dashboard = lazy(() => import('../pages/Dashboard'));
 
@@ -39,6 +40,11 @@ const routes = [
   {
     path: '/detectations/edit/:id',
     element: <EditDetectationPage />,
+    layout: 'default',
+  },
+  {
+    path: '/analytics',
+    element: <AnalyticsHome />,
     layout: 'default',
   },
 ];
