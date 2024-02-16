@@ -56,7 +56,9 @@ pygame.mixer.init()
 elephant_sound = pygame.mixer.Sound("siran.mp3")
 
 # Open the video capture device
-cap = cv2.VideoCapture(1)
+# cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture("elephant.mp4")
 
 if not cap.isOpened():
     print("Error: Could not open webcam.")
